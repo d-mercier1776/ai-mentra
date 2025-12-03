@@ -16,7 +16,7 @@ class Feedback(models.Model):
     )
 
     class_room: models.ForeignKey = models.ForeignKey(
-        ClassRoom,
+        'ClassRoom',
         on_delete=models.CASCADE,
         related_name='feedbacks'
     )

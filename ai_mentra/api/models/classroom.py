@@ -1,7 +1,6 @@
 from django.db import models
 from django.utils import timezone
-from .user import User  # if you want teacherName linked to User
-from .feedback import Feedback  # Feedback model
+from .user import UserProfile
 
 class ClassRoom(models.Model):
     class_room_name: models.CharField = models.CharField(max_length=200, null=False)
